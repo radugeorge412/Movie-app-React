@@ -1,0 +1,13 @@
+.contentTrending {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-around;
+}
+
+.search {
+    max-width: 550px;
+    display: flex;
+    margin: auto;
+
+}
