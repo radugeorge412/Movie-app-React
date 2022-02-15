@@ -3,10 +3,11 @@ import React from "react";
 import { img_300 } from "../config";
 import { unavailable } from "../config";
 import "../styles/MovieCard.css";
+import DetailsModal from "./DetailsModal";
 
 function MovieCard({ id, poster, title, date, media_type, vote_average }) {
   return (
-    <div className="cardContainer">
+    <DetailsModal media_type={media_type} id={id}>
       <Badge
         badgeContent={vote_average}
         color={vote_average > 6 ? "primary" : "secondary"}
@@ -23,7 +24,7 @@ function MovieCard({ id, poster, title, date, media_type, vote_average }) {
         </span>
         <span className="subTitle">{date}</span>
       </div>
-    </div>
+    </DetailsModal>
   );
 }
 
